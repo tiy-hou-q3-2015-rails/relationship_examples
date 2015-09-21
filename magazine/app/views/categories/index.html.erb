@@ -1,0 +1,5 @@
+<h1>Magazine</h1>
+
+<% @categories.each do |category| %>
+  <h2><%= link_to category.name, category_path(name: category.name) %> - <%= category.posts.count %></h2>
+<% end %>
